@@ -6,6 +6,5 @@ const messageRouter = Router();
 
 messageRouter.post('/', authenticatedRouter, sendMessage);
 messageRouter.get('/chat/:chatId', authenticatedRouter, getChatMessages);
-// messageRouter.put('/group/update/:chatId', authenticatedRouter, updateGroupChat)
 
 export default messageRouter;
